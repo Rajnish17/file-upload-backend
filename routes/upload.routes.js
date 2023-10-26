@@ -38,7 +38,8 @@ router.post("/upload", upload.single("image"), async (req, res) => {
 
     // Save the image document
     await newImage.save();
-
+    
+    //Delete image from uploads folder
     fs.unlinkSync(req.file.path);
 
     // Respond with a success message
