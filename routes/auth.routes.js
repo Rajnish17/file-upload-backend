@@ -1,6 +1,6 @@
 const express =require("express");
 const router = express.Router();
-const {Signup} =require("../controllers/signu.controller");
+const {Signup} =require("../controllers/auth.controller");
 
 
 
